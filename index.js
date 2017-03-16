@@ -8,9 +8,7 @@
 const googleapis = require('googleapis');
 var SCOPES = ['https://www.googleapis.com/auth/drive.metadata.readonly'];
 
-var request = require('request');
-
 exports.deployfunction = function deployfunction(req, res) {
-  console.log(req.secret)
+  console.log(req.body.config);
   res.status(200).send('ok');
 };
